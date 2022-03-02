@@ -5,7 +5,7 @@ function NewTaskForm({categories, onTaskFormSubmit}) {
   const [categoryChange, setCategoryChange] = useState("Code")
   const captureCategories = categories.map(category => {
     if(category === "All")return false;
-    return(<option>{category}</option>)
+    return(<option key={category}>{category}</option>)
   })
 
   function handleText(event){

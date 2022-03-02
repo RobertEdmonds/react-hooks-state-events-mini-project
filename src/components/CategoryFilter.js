@@ -3,7 +3,7 @@ import React from "react";
 function CategoryFilter({categories, handleCategoryChange, selectedCategory}) {
  
   const forCategoriesButtons = categories.map(item =>{
-    return(<button key={item} className={selectedCategory===item? "selected": null} onClick={()=>{handleCategoryChange(item)}}>{item}</button>)
+    return(<button key={item} className={selectedCategory===item? "selected": ""} onClick={()=>{handleCategoryChange(item)}}>{item}</button>)
   })
 
   return (
