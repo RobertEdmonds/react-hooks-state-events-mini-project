@@ -8,7 +8,7 @@ function TaskList({tasks}) {
     setRemovingText(newTaskArray)
   }
 
-  const populatingTasks = removingText.map(item => {
+  const populatingTasks = tasks.map(item => {
    return <Task key={item.text} id={item.text} text={item.text} category={item.category} handleDelete={handleDelete}/>
   })
 
